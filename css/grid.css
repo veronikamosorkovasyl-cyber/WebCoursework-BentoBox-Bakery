@@ -1,0 +1,52 @@
+.bento {
+    display: grid;
+    gap: var(--gap);
+    margin-inline: auto;
+    max-width: var(--page-max-width);
+    padding: var(--gap)
+}
+
+.bento__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+    grid-template-rows: auto;
+    align-items: stretch;
+    grid-template-areas:
+        "intro  intro  intro  intro"
+        "menu   menu   coffee coffee"
+        "about  about  about  about";
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.coffee {
+    grid-area: coffee;
+}
+
+.find-us {
+    grid-area: about;
+}
+
+@media (max-width: 1023px) {
+    .bento__main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "intro intro"
+            "menu  coffee"
+            "about about";
+    }
+}
+
+@media (max-width: 599px) {
+    .bento__main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro" "menu" "coffee" "about";
+    }
+}
