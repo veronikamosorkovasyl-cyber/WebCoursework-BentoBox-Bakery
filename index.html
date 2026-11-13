@@ -14,23 +14,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap"
         rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="bento">
 
         <header class="card nav">
             <a class="brand" href="#top">
-                <img class="brand__logo" src="imgs/logo.webp" alt="St. Gentleman logo">
+                <img class="brand__logo" src="imgs/Logo.svg" alt="St. Gentleman logo">
                 <span class="brand__text">
                     <span class="brand__name">St. Gentleman</span>
                     <span class="brand__tagline">only the best for you</span>
                 </span>
             </a>
-            <nav aria-label="Main navigation">
+
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+                <img src="imgs/menu.svg" alt="" width="32" height="32">
+            </button>
+
+            <nav class="nav__menu" id="main-nav" aria-label="Main navigation">
                 <ul class="nav__list">
                     <li><a href="#story">Our story</a></li>
                     <li><a href="#about">About us</a></li>
-                    <li><a class="btn" href="#menu">Explore our bakes</a></li>
+                    <li><a class="btn" href="#menu">Explore our bakes ↗</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,7 +56,7 @@
                     good coffee &amp; something to smile.
                 </p>
                 <p class="intro__note">Baked fresh every morning</p>
-                <a class="btn" href="#menu">Explore our bakes</a>
+                <a class="btn" href="#menu">Explore our bakes ↗</a>
                 </div>
                 <img class="intro__image" src="imgs/KatsuSand.webp" alt="Katsu Sandwich, our specialty">
             </section>
@@ -78,7 +84,7 @@
                         <span class="menu__price">$5.00</span>
                     </li>
                 </ol>
-                <a class="link" href="#">see the full menu</a>
+                <a class="link" href="#">see the full menu ↗</a>
             </section>
 
             <section class="card coffee" id="coffee">
@@ -86,7 +92,7 @@
                 <div class="coffee__content">
                     <p class="eyebrow">Better together</p>
                     <h2>Your daily pick-me-up</h2>
-                    <a class="link" href="#">special coffee, from $3.50</a>
+                    <a class="link" href="#">special coffee, from $3.50 ↗</a>
                 </div>
             </section>
 
@@ -105,7 +111,7 @@
                         Fresh bakes. Friendly faces. <br>
                         Always worth getting up for.
                     </p>
-                    <a class="btn" href="#">Find us</a>
+                    <a class="btn" href="#">Find us ↗</a>
                 </div>
             </section>
 
@@ -116,7 +122,7 @@
                 St. Gentleman <br>
                 only the best for you
             </p>
-            <a class="footer__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a class="footer__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
             <div class="footer__side">
                 <a href="mailto:hello@stgentleman.co">hello@stgentleman.co</a>
                 <p><small>&copy; 2026 St. Gentleman</small></p>
