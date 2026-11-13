@@ -48,3 +48,7 @@ img {
     outline: 3px solid var(--color-saccent);
     outline-offset: 2px;
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -46,7 +46,90 @@
 
 @media (max-width: 599px) {
     .bento__main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "intro intro"
+            "menu  menu"
+            "coffee coffee"
+            "about about";
+    }
+
+    :root {
+        --gap: 12px;
+        --space-m: 16px;
+        --radius-card: 20px;
+        --fs-h1: 2.25rem;
+        --fs-h2: 1.75rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand__logo {
+        height: 64px;
+        width: auto;
+    }
+
+    .brand__name {
+        font-size: 1.5rem;
+    }
+
+    .brand__tagline {
+        font-size: var(--fs-small);
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .intro {
         grid-template-columns: 1fr;
-        grid-template-areas: "intro" "menu" "coffee" "about";
+    }
+
+    .intro__image {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menu__items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+    .menu__item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 12px;
+        align-items: baseline;
+    }
+
+    .menu__desc {
+        grid-column: 2 / -1;
+        margin: 0;
+    }
+
+    .find-us,
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .find-us__side {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .link,
+    .nav__list a:not(.btn) {
+        display: inline-block;
+        padding-block: 10px;
     }
 }

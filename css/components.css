@@ -208,3 +208,85 @@ button {
     font-family: var(--font-display);
     align-self: right;
 }
+
+/* На десктопі кнопки немає */
+.nav__toggle {
+    display: none;
+    padding: 8px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+@media (max-width: 599px) {
+    .nav {
+        position: relative;
+    }
+
+    .brand__logo {
+        height: 72px;
+        width: 54px;
+    }
+
+    .brand__name {
+        font-size: 1.5rem;
+    }
+
+    .brand__tagline {
+        font-size: var(--fs-small);
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    /* випадаюче меню */
+    .nav__menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        z-index: 10;
+        padding: var(--space-m);
+        border-radius: var(--radius-card);
+        background: var(--color-bg);
+        box-shadow: 0 8px 24px rgb(0 0 0 / .15);
+    }
+
+    .nav__menu.is-open {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* решта блоків в одну колонку */
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro__image {
+        min-height: 220px;
+        order: -1;
+    }
+
+    /* фото зверху, якщо так у прототипі */
+    .find-us {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .find-us__side {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
