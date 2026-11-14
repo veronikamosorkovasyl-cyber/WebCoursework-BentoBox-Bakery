@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Gentleman menu – cheesecakes, cookies, katsu sandwiches and more.">
+    <title>Menu – St. Gentleman Bakery</title>
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<div class="bento">
+
+        <header class="card nav">
+            <a class="brand" href="index.html">
+                <img class="brand__logo" src="imgs/Logo.svg" alt="St. Gentleman logo">
+                <span class="brand__text">
+                    <span class="brand__name">St. Gentleman</span>
+                    <span class="brand__tagline">only the best for you</span>
+                </span>
+            </a>
+        
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+                <img src="imgs/menu.svg" alt="" width="32" height="32">
+            </button>
+        
+            <nav class="nav__menu" id="main-nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a class="btn" href="menu.html">Explore our bakes ↗</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="top">
+            <h1 class="visually-hidden">Our bakes</h1>
+
+            <ul class="products">
+                <li class="card product">
+                    <img class="product__img" src="imgs/Japanese-Cheesecake.webp" alt="Slice of Japanese cheesecake" width="400"
+                        height="300" loading="lazy">
+                    <h2 class="product__name">Cheesecakes</h2>
+                    <p class="product__desc">Cheesy enjoyment</p>
+                    <p class="product__price">$4.50</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/Castella-Cake.webp" alt="Castella cake on a plate" width="400"
+                        height="300" loading="lazy">
+                    <h2 class="product__name">Castella Cake</h2>
+                    <p class="product__desc">Lovely to serve</p>
+                    <p class="product__price">$3.30</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/Matcha-Swiss-Roll.webp" alt="Matcha rolls" width="400" height="300"
+                        loading="lazy">
+                    <h2 class="product__name">Macha Rolls</h2>
+                    <p class="product__desc">Trendy and sweet</p>
+                    <p class="product__price">$3.00</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/Sesame-Cookies.webp" alt="Assorted cookies" width="400" height="300"
+                        loading="lazy">
+                    <h2 class="product__name">Cookies</h2>
+                    <p class="product__desc">Sweet and nutty</p>
+                    <p class="product__price">$2.00</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/KatsuSand.webp" alt="Katsu sandwich" width="400" height="300"
+                        loading="lazy">
+                    <h2 class="product__name">Katsu Sandwich</h2>
+                    <p class="product__desc">Crusty and soft</p>
+                    <p class="product__price">$4.50</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/Chocolate-Fudge-Cupcake-Recipe.webp" alt="Chocolate cupcakes" width="400"
+                        height="300" loading="lazy">
+                    <h2 class="product__name">Choco Cupcake</h2>
+                    <p class="product__desc">Sweet classic</p>
+                    <p class="product__price">$3.50</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/donuts.webp" alt="Glazed donuts" width="400" height="300"
+                        loading="lazy">
+                    <h2 class="product__name">Glazed Donuts</h2>
+                    <p class="product__desc">Great coffee addition</p>
+                    <p class="product__price">$5.00</p>
+                </li>
+                <li class="card product">
+                    <img class="product__img" src="imgs/taiyaki.webp" alt="Traditional bun" width="400" height="300"
+                        loading="lazy">
+                    <h2 class="product__name">Teriyaki</h2>
+                    <p class="product__desc">Tasty traditional bun</p>
+                    <p class="product__price">$3.00</p>
+                </li>
+            </ul>
+
+            <p class="products__soon">More to come soon!</p>
+        </main>
+
+        <footer class="card footer">
+            <p class="footer__brand">
+                St. Gentleman <br>
+                only the best for you
+            </p>
+            <a class="footer__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+            <div class="footer__side">
+                <a href="mailto:hello@stgentleman.co">hello@stgentleman.co</a>
+                <p><small>&copy; 2026 St. Gentleman</small></p>
+            </div>
+        </footer>
+</div>
+</body>
+
+</html>
