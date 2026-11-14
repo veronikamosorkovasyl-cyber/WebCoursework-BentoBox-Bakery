@@ -62,10 +62,6 @@
         --fs-h2: 1.75rem;
     }
 
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     .brand__logo {
         height: 64px;
@@ -78,11 +74,6 @@
 
     .brand__tagline {
         font-size: var(--fs-small);
-    }
-
-    .nav__list {
-        flex-wrap: wrap;
-        gap: 12px 20px;
     }
 
     .intro {
