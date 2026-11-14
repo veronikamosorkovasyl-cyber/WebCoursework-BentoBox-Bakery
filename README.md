@@ -140,7 +140,7 @@ npx serve .
 
 ## Підтримка браузерів
 
-CSS Grid і custom properties підтримуються у всіх сучасних браузерах: Chrome, Edge, Firefox, Safari (останні версії).
+CSS Grid & custom properties підтримуються у всіх сучасних браузерах: Chrome, Edge, Firefox, Safari (останні версії).
 
 ## Публікація
 
