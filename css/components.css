@@ -439,6 +439,8 @@ button {
         align-items: flex-start;
     }
 }
+
+@media (max-width: 599px) {
     .nav {
         position: relative;
     }
@@ -559,3 +561,4 @@ button {
         flex-direction: column;
         gap: 24px;
     }
+}
