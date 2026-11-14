@@ -18,6 +18,75 @@
         "about  about  about  about";
 }
 
+.bento__main--about {
+    grid-template-areas:
+        "title   title   title   title"
+        "story   story   story   story"
+        "mission mission mission mission"
+        "contact contact contact contact";
+}
+
+.about__title {
+    grid-area: title;
+    text-align: center;
+    font-size: var(--fs-h1);
+    padding: var(--space-m);
+}
+
+.about-story {
+    grid-area: story;
+}
+
+.about-mission {
+    grid-area: mission;
+    background: var(--color-card2);
+    color: var(--color-bg);
+}
+
+.about-contact {
+    grid-area: contact;
+    color: var(--color-bg);
+}
+
+.about-story,
+.about-mission {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: var(--space-m);
+    align-items: center;
+    color: var(--color-bg);
+}
+
+.about-mission {
+    grid-template-columns: .9fr 1.1fr;
+}
+
+.about__img {
+    width: 100%;
+    border-radius: calc(var(--radius-card) - 8px);
+    object-fit: cover;
+}
+
+@media (max-width: 599px) {
+    .bento__main--about {
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" "story" "mission" "contact";
+    }
+
+    .about-story,
+    .about-mission {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bento__main--menu {
+    grid-template-areas:
+        "visually-hidden visually-hidden visually-hidden visually-hidden"
+        "product product product product"
+        "product product product product"
+        "product product product product";
+}
+
 .intro {
     grid-area: intro;
 }
@@ -42,6 +111,14 @@
             "menu  coffee"
             "about about";
     }
+
+    .bento__main--about {
+        grid-template-areas:
+            "title   title"
+            "story   story"
+            "mission mission"
+            "contact contact";
+    }
 }
 
 @media (max-width: 599px) {
@@ -54,6 +131,14 @@
             "about about";
     }
 
+    .bento__main--about {
+        grid-template-areas:
+            "title   title"
+            "story   story"
+            "mission mission"
+            "contact contact";
+    }
+
     :root {
         --gap: 12px;
         --space-m: 16px;
@@ -61,7 +146,6 @@
         --fs-h1: 2.25rem;
         --fs-h2: 1.75rem;
     }
-
 
     .brand__logo {
         height: 64px;
@@ -75,6 +159,7 @@
     .brand__tagline {
         font-size: var(--fs-small);
     }
+
 
     .intro {
         grid-template-columns: 1fr;

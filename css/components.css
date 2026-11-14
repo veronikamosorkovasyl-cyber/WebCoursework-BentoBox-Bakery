@@ -19,7 +19,6 @@
 
 .eyebrow {
     text-transform: lowercase;
-    opacity: .7;
     margin: 0 0 8px;
 }
 
@@ -217,6 +216,110 @@ button {
     cursor: pointer;
 }
 
+.products__soon {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.visually-hidden {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-semibold);
+    color: var(--color-text);
+    text-align: center;
+    padding: var(--space-m);
+}
+
+.about-story__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    color: var(--color-bg);
+    font-size: var(--fs-h3);
+}
+
+.about-mission__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    color: var(--color-bg);
+    font-size: var(--fs-h3);
+}
+
+.about-mission {
+    background: var(--color-card2);
+    color: var(--color-bg);
+}
+
+.contacts {
+    display: flex;
+    gap: 48px;
+}
+
+.contacts__col {
+    flex: 1;
+    /* обидві колонки рівні */
+    min-width: 0;
+}
+
+.contacts__col h3,
+.contacts__col p {
+    margin: 0 0 6px;
+}
+
+
+.about-contact__item h3,
+.about-contact__item p {
+    margin: 0 0 4px;
+}
+
+/* 2. Сітка карток */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gap);
+    align-items: stretch;
+    /* картки в ряду однакової висоти */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Усередині картки */
+.product {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: var(--color-bg);
+}
+
+.product:nth-child(odd) {
+    background: var(--color-card2);
+}
+
+/* темна */
+.product:nth-child(even) {
+    background: var(--color-card);
+}
+
+/* червона */
+
+.product__img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* однакова висота фото */
+    object-fit: cover;
+}
+
+.product__price {
+    margin-top: auto;
+    /* ціна завжди притиснута донизу */
+}
+
+
 /* Навігація: планшет + мобільний (бургер і випадаюче меню) */
 @media (max-width: 1023px) {
     .nav {
@@ -248,6 +351,52 @@ button {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+    }
+
+    /* menu: 3 колонки -> 2 */
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* шахматний порядок кольорів, щоб колонки не були однокольорові */
+    .product:nth-child(4n + 1),
+    .product:nth-child(4n) {
+        background: var(--color-card2);
+    }
+
+    .product:nth-child(4n + 2),
+    .product:nth-child(4n + 3) {
+        background: var(--color-card);
+    }
+
+    .products__soon {
+        font-size: 1.125rem;
+    }
+
+    /* about: текст і фото одне під одним */
+    .about-story,
+    .about-mission {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img {
+        height: auto;
+        max-height: none;
+        aspect-ratio: 16 / 9;
+    }
+
+    .about-story__text,
+    .about-mission__text {
+        font-size: 1.125rem;
+    }
+
+    .about-story__text h2,
+    .about-mission__slogan {
+        font-size: var(--fs-h2);
+    }
+
+    .contacts {
+        gap: 32px;
     }
 }
 
@@ -361,5 +510,55 @@ button {
     .footer {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product:nth-child(odd) {
+        background: var(--color-card2);
+    }
+
+    .product:nth-child(even) {
+        background: var(--color-card);
+    }
+
+    .product__img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .product__name {
+        font-size: 1.25rem;
+    }
+
+    .products__soon {
+        font-size: 1rem;
+    }
+
+    /* about */
+    .about__title {
+        padding: var(--space-m) 0 8px;
+    }
+
+    .about__img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .about-story__text,
+    .about-mission__text {
+        font-size: 1rem;
+        gap: 12px;
+    }
+
+    .about-story__text h2,
+    .about-mission__slogan {
+        font-size: 1.375rem;
+        line-height: 1.2;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 24px;
     }
 }
