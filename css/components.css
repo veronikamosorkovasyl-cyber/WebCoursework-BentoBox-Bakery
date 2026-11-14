@@ -439,8 +439,6 @@ button {
         align-items: flex-start;
     }
 }
-
-@media (max-width: 599px) {
     .nav {
         position: relative;
     }
