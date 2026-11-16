@@ -3,7 +3,7 @@
 Адаптивний лендінг вигаданої пекарні **St. Gentleman** (Brooklyn, NY), створений у рамках курсової роботи на тему
 **«Розробка лендінгу з бенто-сіткою (Bento Grid) на CSS Grid»**.
 
-🔗 **Демо:** https://stgentlemanbakery.netlify.app/
+🔗 **Демо:** https://veronikamosorkovasyl-cyber.github.io/WebCoursework-BentoBox-Bakery/index.html
 🎨 **Макет у Figma:** https://www.figma.com/design/R8qKl2nZtnVt3FJZl1go0v/Figma-basics?node-id=2604-157&t=y3UasWB2a0Vqss4x-1
 
 <img width="1626" height="950" alt="site photo" src="https://github.com/user-attachments/assets/2ff0218d-29fc-4cec-8f94-286a906303cc" />
